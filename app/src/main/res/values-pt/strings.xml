@@ -3,10 +3,12 @@
 
     <string name="app_name">Organizador de Reuniao</string>
 
+    <string name="login_frag.name">Nome</string>
     <string name="login_frag.email">Email</string>
     <string name="login_frag.password">Senha</string>
     <string name="login_frag.forgot_password">Esqueceu a senha ?</string>
-    <string name="login_frag.login_btn">Entrar</string>
+    <string name="login_frag.sign_in">Entrar</string>
+    <string name="login_frag.sign_up">Cadastrar</string>
 
     <string name="login_frag.saripaar_errors.not_empty">Obrigatório</string>
     <string name="login_frag.saripaar_errors.email">Email inválido</string>

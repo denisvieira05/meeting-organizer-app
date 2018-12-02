@@ -1,39 +1,35 @@
 package org.js.denisvieira.meeting_organizer.application.login
 
 import android.databinding.DataBindingUtil
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import org.js.denisvieira.meeting_organizer.R
-import org.js.denisvieira.meeting_organizer.databinding.LoginActBinding
+import org.js.denisvieira.meeting_organizer.databinding.SignupActBinding
 
-class LoginActivity : AppCompatActivity(), LoginContract.View  {
+class SignUpActivity : AppCompatActivity(), SigninContract.View  {
 
 
-    private lateinit var mLoginActivityBinding: LoginActBinding
+    private lateinit var mSignupActBinding: SignupActBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        mLoginActivityBinding = DataBindingUtil.setContentView(this,
-                R.layout.login_act)
+        mSignupActBinding = DataBindingUtil.setContentView(this,
+                R.layout.signin_act)
     }
 
-    override fun login(view: View) {
+    override fun onPressSignUp(view: View) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun goToSelectConstructionSite() {
+    override fun goToGuidelinesList() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 //
 //    override fun showLoginErrors(authRemoteErrorCodeEnum: AuthRemoteErrorCodeEnum) {
 //        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 //    }
-
-    override fun showInitTutorial() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     override fun showRemoteRequestLoader() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -43,7 +39,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View  {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun setPresenter(presenter: LoginContract.Presenter) {
+    override fun setPresenter(presenter: SigninContract.Presenter) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

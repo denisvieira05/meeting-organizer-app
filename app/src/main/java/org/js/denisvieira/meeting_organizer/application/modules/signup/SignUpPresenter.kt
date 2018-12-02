@@ -2,37 +2,37 @@ package org.js.denisvieira.meeting_organizer.application.login
 
 import android.content.Context
 
-class LoginPresenter(loginView: LoginContract.View,
+class SignUpPresenter(signinView: SigninContract.View,
 //                     getAuth: GetAuth,
-                     context: Context) : LoginContract.Presenter {
+                      context: Context) : SigninContract.Presenter {
 
-    private val mLoginView: LoginContract.View
+    private val mSigninView: SigninContract.View
     private val context: Context
 //    private val mGetAuth: GetAuth
 
     init {
-        this.mLoginView = checkNotNull(loginView)
+        this.mSigninView = checkNotNull(signinView)
 //        this.mGetAuth = checkNotNull(getAuth)
         this.context = checkNotNull(context)
 
-        mLoginView.setPresenter(this)
+        mSigninView.setPresenter(this)
     }
 
 
     override fun login(email: String, password: String, deviceId: String) {
 
 //        val request = AuthRequest(email, password, deviceId)
-//        mLoginView.showRemoteRequestLoader()
+//        mSigninView.showRemoteRequestLoader()
 //
 //        mGetAuth.authorize(request, object : UseCase.UseCaseAuthCallback() {
 //            fun onSuccess() {
-//                mLoginView.hideRemoteRequestLoader()
-//                mLoginView.goToSelectConstructionSite()
+//                mSigninView.hideRemoteRequestLoader()
+//                mSigninView.goToSelectConstructionSite()
 //            }
 //
 //            fun onError(authRemoteErrorCodeEnum: AuthRemoteErrorCodeEnum) {
-//                mLoginView.hideRemoteRequestLoader()
-//                mLoginView.showLoginErrors(authRemoteErrorCodeEnum)
+//                mSigninView.hideRemoteRequestLoader()
+//                mSigninView.showLoginErrors(authRemoteErrorCodeEnum)
 //            }
 //
 //        })
