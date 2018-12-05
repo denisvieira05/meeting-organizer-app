@@ -1,17 +1,18 @@
 <resources>
     <string name="app_name">Meeting Organizer</string>
 
-    <string name="login_frag.name">Name</string>
-    <string name="login_frag.email">Email</string>
-    <string name="login_frag.password">Password</string>
-    <string name="login_frag.forgot_password">Forgot Password ?</string>
-    <string name="login_frag.sign_in">Sign In</string>
-    <string name="login_frag.sign_up">Sign Up</string>
+    <string name="authentication.name">Nome</string>
+    <string name="authentication.email">Email</string>
+    <string name="authentication.password">Senha</string>
+    <string name="authentication.forgot_password">Esqueceu a senha ?</string>
+    <string name="authentication.sign_in">Entrar</string>
+    <string name="authentication.sign_up">Cadastrar</string>
+    <string name="authentication.back_to_login">Voltar para o Login</string>
+    <string name="authentication.send_email_to_remember_password">Send Email to Recovery</string>
 
-    <string name="login_frag.saripaar_errors.not_empty">Required</string>
-    <string name="login_frag.saripaar_errors.email">Invalid email</string>
-    <string name="login_frag.saripaar_errors.password">Invalid password</string>
-    <string name="login_frag.saripaar_errors.invalid_grant">Incorrect Credentials</string>
-    <string name="login_frag.saripaar_errors.no_network_connection">No Network Connection</string>
-    <string name="login_frag.signup">Sign Up</string>
+    <string name="authentication.errors.not_empty">Obrigatório</string>
+    <string name="authentication.errors.email">Email inválido</string>
+    <string name="authentication.errors.password">Senha inválida</string>
+    <string name="authentication.errors.invalid_grant">Email e/ou Senha Incorreto</string>
+    <string name="authentication.errors.no_network_connection">Sem Conexão com a Internet</string>
 </resources>

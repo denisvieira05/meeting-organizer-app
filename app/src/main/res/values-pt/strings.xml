@@ -3,18 +3,19 @@
 
     <string name="app_name">Organizador de Reuniao</string>
 
-    <string name="login_frag.name">Nome</string>
-    <string name="login_frag.email">Email</string>
-    <string name="login_frag.password">Senha</string>
-    <string name="login_frag.forgot_password">Esqueceu a senha ?</string>
-    <string name="login_frag.sign_in">Entrar</string>
-    <string name="login_frag.sign_up">Cadastrar</string>
+    <string name="authentication.name">Nome</string>
+    <string name="authentication.email">Email</string>
+    <string name="authentication.password">Senha</string>
+    <string name="authentication.forgot_password">Esqueceu a senha ?</string>
+    <string name="authentication.sign_in">Entrar</string>
+    <string name="authentication.sign_up">Cadastrar</string>
+    <string name="authentication.back_to_login">Voltar para o Login</string>
+    <string name="authentication.send_email_to_remember_password">Send Email to Recovery</string>
 
-    <string name="login_frag.saripaar_errors.not_empty">Obrigatório</string>
-    <string name="login_frag.saripaar_errors.email">Email inválido</string>
-    <string name="login_frag.saripaar_errors.password">Senha inválida</string>
-    <string name="login_frag.saripaar_errors.invalid_grant">Email e/ou Senha Incorreto</string>
-    <string name="login_frag.saripaar_errors.no_network_connection">Sem Conexão com a Internet</string>
-    <string name="login_frag.signup">Cadastrar</string>
+    <string name="authentication.errors.not_empty">Obrigatório</string>
+    <string name="authentication.errors.email">Email inválido</string>
+    <string name="authentication.errors.password">Senha inválida</string>
+    <string name="authentication.errors.invalid_grant">Email e/ou Senha Incorreto</string>
+    <string name="authentication.errors.no_network_connection">Sem Conexão com a Internet</string>
 
 </resources>

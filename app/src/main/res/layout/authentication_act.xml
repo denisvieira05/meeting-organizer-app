@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="org.js.denisvieira.meeting_organizer.domain.constants.authentication.AuthenticationScreenStateEnum" />
+
+        <variable
+            name="handler"
+            type="org.js.denisvieira.meeting_organizer.application.modules.authentication.AuthenticationActivity" />
+
+        <variable
+            name="authenticationScreenStateEnum"
+            type="org.js.denisvieira.meeting_organizer.domain.constants.authentication.AuthenticationScreenStateEnum" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/capptan_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/dark_gray"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:id="@+id/auth_content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/authentication.sign_up"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:onClick="onPressSignUpLink"
+            android:visibility="@{authenticationScreenStateEnum == authenticationScreenStateEnum.SIGN_IN ? View.VISIBLE : View.GONE}"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/authentication.back_to_login"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:onClick="onPressBackToLoginLink"
+            android:visibility="@{authenticationScreenStateEnum != authenticationScreenStateEnum.SIGN_IN ? View.VISIBLE : View.GONE}"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/authentication.forgot_password"
+            android:onClick="onPressRememberPasswordLink"
+            android:visibility="@{authenticationScreenStateEnum == authenticationScreenStateEnum.SIGN_IN ? View.VISIBLE : View.GONE}"
+            android:textAllCaps="true"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,4 +1,6 @@
-package org.js.denisvieira.powermarvelapp.application
+package org.js.denisvieira.meeting_organizer.application
+
+import org.js.denisvieira.meeting_organizer.domain.constants.authentication.AuthRemoteErrorCodeEnum
 
 interface UseCase {
 
@@ -18,5 +20,9 @@ interface UseCase {
         fun onFailed(errorDescription: String)
     }
 
+    interface UseCaseAuthCallback {
+        fun onSuccess()
+        fun onError(authRemoteErrorCodeEnum: AuthRemoteErrorCodeEnum)
+    }
 
 }
